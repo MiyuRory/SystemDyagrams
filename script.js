@@ -4,7 +4,7 @@ const data = {
             "Entidad": "Agile Methodology",
             "Influye": [
                 { "Polaridad": "Positiva", "Entidad": "Three Amigos Meeting" },
-                { "Polaridad": "Positiva", "Entidad": "Feedback loops" },
+                { "Polaridad": "Positiva", "Entidad": "Feedback Loops" },
                 { "Polaridad": "Positiva", "Entidad": "Engaging Business Stakeholders" },
                 { "Polaridad": "Negativa", "Entidad": "Poor Written Stories" }
             ]
@@ -24,7 +24,10 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Team Morale" },
                 { "Polaridad": "Negativa", "Entidad": "Job Satisfaction" },
                 { "Polaridad": "Negativa", "Entidad": "Motivation" },
-                { "Polaridad": "Positiva", "Entidad": "Absenteism" }
+                { "Polaridad": "Positiva", "Entidad": "Absenteism" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Team Morale" }
+
             ]
         },
         {
@@ -34,12 +37,18 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Silos" }
             ]
         },
-{
+        {
             "Entidad": "Feedback Loops",
             "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
                 { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Burnout" },
+				{ "Polaridad": "Positiva", "Entidad": "Productivity" },
                 { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
-                { "Polaridad": "Negativa", "Entidad": "Frustration" }
+                { "Polaridad": "Negativa", "Entidad": "Frustration" },
+				{ "Polaridad": "Positiva", "Entidad": "Continuous Learning" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Errors" }
             ]
         },
         {
@@ -175,14 +184,6 @@ const data = {
             ]
         },
         {
-            "Entidad": "Burnout",
-            "Influye": [
-                { "Polaridad": "Negativa", "Entidad": "Productivity" },
-                { "Polaridad": "Negativa", "Entidad": "Team Morale" },
-                { "Polaridad": "Negativa", "Entidad": "Job Satisfaction" }
-            ]
-        },
-        {
             "Entidad": "Agile",
             "Influye": [
                 { "Polaridad": "Positiva", "Entidad": "Continuous Learning" },
@@ -203,14 +204,6 @@ const data = {
                 { "Polaridad": "Positiva", "Entidad": "Shared Vision" },
                 { "Polaridad": "Positiva", "Entidad": "Continuous Learning" },
                 { "Polaridad": "Negativa", "Entidad": "Silos" }
-            ]
-        },
-        {
-            "Entidad": "Feedback Loops",
-            "Influye": [
-                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
-                { "Polaridad": "Positiva", "Entidad": "Productivity" },
-                { "Polaridad": "Negativa", "Entidad": "Burnout" }
             ]
         },
         {
@@ -280,11 +273,12 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Avoidance of Meetings" }
             ]
         },
-        {
+{
             "Entidad": "Cross-Functional Shadowing",
             "Influye": [
                 { "Polaridad": "Positiva", "Entidad": "Business Understanding of Systems" },
-                { "Polaridad": "Positiva", "Entidad": "Development Teams Understanding Business" }
+                { "Polaridad": "Positiva", "Entidad": "Development Teams Understanding Business" },
+                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" }
             ]
         },
         {
@@ -295,10 +289,13 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Confusion" }
             ]
         },
-{
+		{
             "Entidad": "Assumption of Knowledge",
             "Influye": [
-                { "Polaridad": "Negativa", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Negativa", "Entidad": "Clear Acceptance Criterias" },
+                { "Polaridad": "Positiva", "Entidad": "Increased Ambiguity" },
+                { "Polaridad": "Negativa", "Entidad": "Communication" },
+				{ "Polaridad": "Negativa", "Entidad": "Efficient Communication" },
                 { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" }
             ]
         },
@@ -395,14 +392,6 @@ const data = {
             ]
         },
         {
-            "Entidad": "Assumption of Knowledge",
-            "Influye": [
-                { "Polaridad": "Negativa", "Entidad": "Communication" },
-                { "Polaridad": "Positiva", "Entidad": "Increased Ambiguity" },
-                { "Polaridad": "Negativa", "Entidad": "Clear Acceptance Criterias" }
-            ]
-        },
-        {
             "Entidad": "Lack of Ownership",
             "Influye": [
                 { "Polaridad": "Negativa", "Entidad": "Commitment" },
@@ -424,14 +413,6 @@ const data = {
                 { "Polaridad": "Positiva", "Entidad": "Continous Learning" },
                 { "Polaridad": "Negativa", "Entidad": "Knowledge Loss" },
                 { "Polaridad": "Positiva", "Entidad": "Definition of Done (DoD) for Histories" }
-            ]
-        },
-        {
-            "Entidad": "Feedback",
-            "Influye": [
-                { "Polaridad": "Positiva", "Entidad": "Productivity" },
-                { "Polaridad": "Negativa", "Entidad": "Burnout" },
-                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" }
             ]
         },
         {
@@ -531,14 +512,6 @@ const data = {
             ]
         },
         {
-            "Entidad": "Assumption of Knowledge",
-            "Influye": [
-                { "Polaridad": "Negativa", "Entidad": "Clear Acceptance Criterias" },
-                { "Polaridad": "Positiva", "Entidad": "Increased Ambiguity" },
-                { "Polaridad": "Negativa", "Entidad": "Communication" }
-            ]
-        },
-        {
             "Entidad": "Lack of Ownership",
             "Influye": [
                 { "Polaridad": "Negativa", "Entidad": "Commitment" },
@@ -560,14 +533,6 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Productivity" },
                 { "Polaridad": "Positiva", "Entidad": "Rework" },
                 { "Polaridad": "Negativa", "Entidad": "Team Collaboration" }
-            ]
-        },
-        {
-            "Entidad": "Cross-functional Shadowing",
-            "Influye": [
-                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
-                { "Polaridad": "Positiva", "Entidad": "Engaging Business Stakeholders" },
-                { "Polaridad": "Positiva", "Entidad": "Business Understanding of Systems" }
             ]
         },
         {
@@ -619,14 +584,6 @@ const data = {
             ]
         },
         {
-            "Entidad": "Feedback",
-            "Influye": [
-                { "Polaridad": "Negativa", "Entidad": "Errors" },
-                { "Polaridad": "Positiva", "Entidad": "Productivity" },
-                { "Polaridad": "Positiva", "Entidad": "Continuous Learning" }
-            ]
-        },
-        {
             "Entidad": "Increased Costs",
             "Influye": [
                 { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
@@ -664,14 +621,6 @@ const data = {
                 { "Polaridad": "Positiva", "Entidad": "Maintainability" }
             ]
         },
-        {
-            "Entidad": "Cross-Functional Shadowing",
-            "Influye": [
-                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
-                { "Polaridad": "Positiva", "Entidad": "Business Understanding of Systems" },
-                { "Polaridad": "Positiva", "Entidad": "Development Teams Understanding Business" }
-            ]
-        },
 {
             "Entidad": "Story Splitting",
             "Influye": [
@@ -702,56 +651,711 @@ const data = {
                 { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" }
             ]
         },
-	{ "Entidad": "Feedback loops", "Influye": [] }, 
-	{ "Entidad": "Clear Acceptance Criterias", "Influye": [] }, 
-	{ "Entidad": "Team Morale", "Influye": [] }, 
-	{ "Entidad": "Productivity", "Influye": [] }, 
-	{ "Entidad": "Job Satisfaction", "Influye": [] }, 
-	{ "Entidad": "Motivation", "Influye": [] }, 
-	{ "Entidad": "Absenteism", "Influye": [] }, 
-	{ "Entidad": "Silos", "Influye": [] }, 
-	{ "Entidad": "Collaboration", "Influye": [] }, 
-	{ "Entidad": "Team Collaboration", "Influye": [] }, 
-	{ "Entidad": "Frustration", "Influye": [] }, 
-	{ "Entidad": "Ambiguity", "Influye": [] }, 
-	{ "Entidad": "Stakeholder Satisfaction", "Influye": [] }, 
-	{ "Entidad": "Commitment", "Influye": [] },  
-	{ "Entidad": "Agile Adoption", "Influye": [] }, 
-	{ "Entidad": "Old Management Style", "Influye": [] }, 
-	{ "Entidad": "Errors", "Influye": [] }, 
-	{ "Entidad": "Consistency in User Stories", "Influye": [] }, 
-	{ "Entidad": "Learning Curve", "Influye": [] }, 
-	{ "Entidad": "Clear Understanding", "Influye": [] }, 
-	{ "Entidad": "Confusion", "Influye": [] }, 
-	{ "Entidad": "Team Understanding", "Influye": [] }, 
-	{ "Entidad": "Reduced Ambiguity", "Influye": [] }, 
-	{ "Entidad": "Manageable Tasks", "Influye": [] },
-	{ "Entidad": "Clarity in Development", "Influye": [] }, 
-	{ "Entidad": "Overhead", "Influye": [] }, 
-	{ "Entidad": "Sprint Goals", "Influye": [] },
-	{ "Entidad": "Feature Development", "Influye": [] }, 
-	{ "Entidad": "Maintainability", "Influye": [] }, 
-	{ "Entidad": "Continuous Learning", "Influye": [] },
-	{ "Entidad": "Continuous Integration", "Influye": [] }, 
-	{ "Entidad": "Continuous Deployment", "Influye": [] }, 
-	{ "Entidad": "Fundamental Solutions", "Influye": [] }, 
-	{ "Entidad": "Side Effects", "Influye": [] }, 
-	{ "Entidad": "Short Term Productivity", "Influye": [] }, 
-	{ "Entidad": "Avoidance of Meetings", "Influye": [] }, 
-	{ "Entidad": "Business Understanding of Systems", "Influye": [] },
-	{ "Entidad": "Development Teams Understanding Business", "Influye": [] }, 
-	{ "Entidad": "Efficient Communication", "Influye": [] }, 
-	{ "Entidad": "Value", "Influye": [] }, 
-	{ "Entidad": "Quality Assurance", "Influye": [] }, 
-	{ "Entidad": "Rework", "Influye": [] }, 
-	{ "Entidad": "Performance", "Influye": [] }, 
-	{ "Entidad": "Time Allocation", "Influye": [] }, 
-	{ "Entidad": "Continous Learning", "Influye": [] }, 
-	{ "Entidad": "Adoption of Agile", "Influye": [] }, 
-	{ "Entidad": "Organizational Intelligence", "Influye": [] }, 
-	{ "Entidad": "Ownership", "Influye": [] }, 
-	{ "Entidad": "Speed of Agile Ceremonies", "Influye": [] }, 
-	{ "Entidad": "Project Success", "Influye": [] }
+	{
+            "Entidad": "Inefficient Communication",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Increased Ambiguity" }
+            ]
+        },
+        {
+            "Entidad": "Growth and Underinvestment",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Agile Methodology" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" }
+            ]
+        },
+	{
+            "Entidad": "Open Communication",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Silos" }
+            ]
+        },
+        {
+            "Entidad": "Regular Refinement Sessions",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Definition of Done (DoD) for Histories" },
+                { "Polaridad": "Positiva", "Entidad": "Clear Acceptance Criterias" },
+                { "Polaridad": "Negativa", "Entidad": "Increased Ambiguity" }
+            ]
+        },
+        {
+            "Entidad": "Ineffective Risk Management",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Burnout" }
+            ]
+        },
+        {
+            "Entidad": "Continuous Learning",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Agile Methodology" },
+                { "Polaridad": "Positiva", "Entidad": "Organization Intelligence" },
+                { "Polaridad": "Negativa", "Entidad": "Knowledge Loss" }
+            ]
+        },
+			{ "Entidad": "Clear Acceptance Criterias", "Influye": [] }, 
+{
+            "Entidad": "Team Morale",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Absenteism" },
+                { "Polaridad": "Negativa", "Entidad": "Burnout" }
+            ]
+        },
+        {
+            "Entidad": "Productivity",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Burnout" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" }
+            ]
+        },
+        {
+            "Entidad": "Job Satisfaction",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Absenteism" },
+                { "Polaridad": "Positiva", "Entidad": "Motivation" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Burnout" }
+            ]
+        },
+        {
+            "Entidad": "Motivation",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Burnout" },
+                { "Polaridad": "Positiva", "Entidad": "Ownership" }
+            ]
+        },
+        {
+            "Entidad": "Absenteism",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" }
+            ]
+        }, 
+	{
+            "Entidad": "Silos",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Positiva", "Entidad": "Frustration" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Communication" },
+                { "Polaridad": "Positiva", "Entidad": "Ambiguity" }
+            ]
+        },
+        {
+            "Entidad": "Collaboration",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Frustration" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Silos" }
+            ]
+        },
+        {
+            "Entidad": "Team Collaboration",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Silos" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Frustration" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Commitment" }
+            ]
+        },
+        {
+            "Entidad": "Frustration",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Commitment" }
+            ]
+        },
+        {
+            "Entidad": "Ambiguity",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Frustration" },
+                { "Polaridad": "Negativa", "Entidad": "Commitment" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" }
+            ]
+        },
+        {
+            "Entidad": "Stakeholder Satisfaction",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Commitment" },
+                { "Polaridad": "Negativa", "Entidad": "Frustration" }
+            ]
+        },
+        {
+            "Entidad": "Commitment",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Absenteism" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" }
+            ]
+        }, 
+{
+            "Entidad": "Agile Adoption",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Old Management Style" },
+                { "Polaridad": "Negativa", "Entidad": "Confusion" },
+                { "Polaridad": "Positiva", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Positiva", "Entidad": "Team Understanding" },
+                { "Polaridad": "Positiva", "Entidad": "Consistency in User Stories" },
+                { "Polaridad": "Positiva", "Entidad": "Clear Understanding" }
+            ]
+        },
+        {
+            "Entidad": "Old Management Style",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Agile Adoption" },
+                { "Polaridad": "Positiva", "Entidad": "Confusion" },
+                { "Polaridad": "Negativa", "Entidad": "Clear Understanding" },
+                { "Polaridad": "Negativa", "Entidad": "Team Collaboration" },
+                { "Polaridad": "Negativa", "Entidad": "Consistency in User Stories" }
+            ]
+        },
+        {
+            "Entidad": "Errors",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Frustration" },
+                { "Polaridad": "Negativa", "Entidad": "Clear Understanding" }
+            ]
+        },
+        {
+            "Entidad": "Consistency in User Stories",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Clear Understanding" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Confusion" }
+            ]
+        },
+        {
+            "Entidad": "Learning Curve",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Errors" },
+                { "Polaridad": "Negativa", "Entidad": "Clear Understanding" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Confusion" }
+            ]
+        },
+        {
+            "Entidad": "Clear Understanding",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Team Understanding" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Confusion" }
+            ]
+        },
+        {
+            "Entidad": "Confusion",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Errors" },
+                { "Polaridad": "Negativa", "Entidad": "Team Understanding" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Clear Understanding" }
+            ]
+        },
+        {
+            "Entidad": "Team Understanding",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Clear Understanding" },
+                { "Polaridad": "Negativa", "Entidad": "Confusion" }
+            ]
+        },
+{
+            "Entidad": "Reduced Ambiguity",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Clarity in Development" },
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Manageable Tasks" },
+                { "Polaridad": "Positiva", "Entidad": "Team Understanding" }
+            ]
+        },
+        {
+            "Entidad": "Manageable Tasks",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Overhead" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Sprint Goals" }
+            ]
+        },
+        {
+            "Entidad": "Clarity in Development",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Team Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" }
+            ]
+        },
+        {
+            "Entidad": "Overhead",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Feature Development" }
+            ]
+        },
+        {
+            "Entidad": "Sprint Goals",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" }
+            ]
+        },
+        {
+            "Entidad": "Feature Development",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" }
+            ]
+        },
+{
+            "Entidad": "Maintainability",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Positiva", "Entidad": "Longevity of Software" }
+            ]
+        },
+        {
+            "Entidad": "Continuous Learning",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Adaptability" }
+            ]
+        },
+        {
+            "Entidad": "Continuous Integration",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Integration Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Maintainability" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" }
+            ]
+        },
+        {
+            "Entidad": "Continuous Deployment",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Feature Delivery" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Potential Downtimes" }
+            ]
+        },
+        {
+            "Entidad": "Fundamental Solutions",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Short Term Issues" },
+                { "Polaridad": "Positiva", "Entidad": "Long Term Stability" },
+                { "Polaridad": "Negativa", "Entidad": "Band-Aid Fixes" }
+            ]
+        },
+        {
+            "Entidad": "Side Effects",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Maintainability" }
+            ]
+        },
+        {
+            "Entidad": "Short Term Productivity",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" }
+            ]
+        },
+{
+            "Entidad": "Avoidance of Meetings",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Positiva", "Entidad": "Short Term Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Understanding" },
+                { "Polaridad": "Negativa", "Entidad": "Team Collaboration" }
+            ]
+        },
+        {
+            "Entidad": "Business Understanding of Systems",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Negativa", "Entidad": "Scope Creep" },
+                { "Polaridad": "Positiva", "Entidad": "Value" }
+            ]
+        },
+        {
+            "Entidad": "Development Teams Understanding Business",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Development" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Negativa", "Entidad": "Misaligned Goals" }
+            ]
+        },
+        {
+            "Entidad": "Efficient Communication",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Misunderstandings" }
+            ]
+        },
+        {
+            "Entidad": "Value",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" },
+                { "Polaridad": "Positiva", "Entidad": "Revenue Growth" },
+                { "Polaridad": "Positiva", "Entidad": "Brand Reputation" }
+            ]
+        },
+        {
+            "Entidad": "Quality Assurance",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Trust" },
+                { "Polaridad": "Positiva", "Entidad": "Maintainability" },
+                { "Polaridad": "Positiva", "Entidad": "Product Longevity" }
+            ]
+        },
+	{
+            "Entidad": "Rework",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Performance" },
+                { "Polaridad": "Negativa", "Entidad": "Time Allocation" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Value" },
+                { "Polaridad": "Negativa", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Maintainability" }
+            ]
+        },
+        {
+            "Entidad": "Performance",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" }
+            ]
+        },
+        {
+            "Entidad": "Time Allocation",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Performance" },
+                { "Polaridad": "Negativa", "Entidad": "Burnout" },
+                { "Polaridad": "Positiva", "Entidad": "Quality Assurance" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" }
+            ]
+        },
+        {
+            "Entidad": "Continuous Learning",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Performance" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Adoption of Agile" },
+                { "Polaridad": "Positiva", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Errors" }
+            ]
+        },
+        {
+            "Entidad": "Adoption of Agile",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Performance" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Negativa", "Entidad": "Old Management Style" },
+                { "Polaridad": "Positiva", "Entidad": "Continuous Learning" }
+            ]
+        },
+	{
+            "Entidad": "Organizational Intelligence",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Positiva", "Entidad": "Performance" },
+                { "Polaridad": "Positiva", "Entidad": "Adoption of Agile" },
+                { "Polaridad": "Positiva", "Entidad": "Continuous Learning" },
+                { "Polaridad": "Negativa", "Entidad": "Silos" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" }
+            ]
+        },
+        {
+            "Entidad": "Ownership",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Positiva", "Entidad": "Job Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" },
+                { "Polaridad": "Positiva", "Entidad": "Commitment" }
+            ]
+        },
+        {
+            "Entidad": "Speed of Agile Ceremonies",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Burnout" },
+                { "Polaridad": "Positiva", "Entidad": "Project Success" },
+                { "Polaridad": "Negativa", "Entidad": "Frustration" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Negativa", "Entidad": "Avoidance of Meetings" }
+            ]
+        },
+        {
+            "Entidad": "Project Success",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Team Morale" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" },
+                { "Polaridad": "Positiva", "Entidad": "Value" },
+                { "Polaridad": "Positiva", "Entidad": "Job Satisfaction" }
+            ]
+        },
+		{
+            "Entidad": "Continous Learning",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Adaptability" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" },
+                { "Polaridad": "Positiva", "Entidad": "Team Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Quality Assurance" },
+                { "Polaridad": "Negativa", "Entidad": "Integration Errors" }
+            ]
+        },
+        {
+            "Entidad": "Team Productivity",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Project Success" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" }
+            ]
+        },
+        {
+            "Entidad": "Technical Debt",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Team Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Longevity of Software" },
+                { "Polaridad": "Negativa", "Entidad": "Maintainability" },
+                { "Polaridad": "Positiva", "Entidad": "Rework" },
+                { "Polaridad": "Positiva", "Entidad": "Integration Errors" }
+            ]
+        },
+        {
+            "Entidad": "Longevity of Software",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Business Value" },
+                { "Polaridad": "Negativa", "Entidad": "Rework" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt" }
+            ]
+        },
+        {
+            "Entidad": "Adaptability",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Team Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Project Success" },
+                { "Polaridad": "Negativa", "Entidad": "Integration Errors" },
+                { "Polaridad": "Positiva", "Entidad": "Continuous Integration" }
+            ]
+        },
+        {
+            "Entidad": "Integration Errors",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Team Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Longevity of Software" },
+                { "Polaridad": "Negativa", "Entidad": "Adaptability" }
+            ]
+        },
+		{
+            "Entidad": "Feature Delivery",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Potential Downtimes" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Band-Aid Fixes" }
+            ]
+        },
+        {
+            "Entidad": "Potential Downtimes",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Team Productivity" },
+                { "Polaridad": "Positiva", "Entidad": "Short Term Issues" }
+            ]
+        },
+        {
+            "Entidad": "Short Term Issues",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Long Term Stability" },
+                { "Polaridad": "Positiva", "Entidad": "Band-Aid Fixes" }
+            ]
+        },
+        {
+            "Entidad": "Long Term Stability",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" }
+            ]
+        },
+        {
+            "Entidad": "Band-Aid Fixes",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Short Term Issues" },
+                { "Polaridad": "Negativa", "Entidad": "Long Term Stability" },
+                { "Polaridad": "Positiva", "Entidad": "Technical Debt Accumulation" }
+            ]
+        },
+        {
+            "Entidad": "Technical Debt Accumulation",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Feature Delivery" },
+                { "Polaridad": "Negativa", "Entidad": "Long Term Stability" },
+                { "Polaridad": "Positiva", "Entidad": "Short Term Issues" }
+            ]
+        },
+        {
+            "Entidad": "Stakeholder Understanding",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Feature Delivery" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Team Productivity" }
+            ]
+        },
+		{
+            "Entidad": "Misaligned Goals",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Team Productivity" },
+                { "Polaridad": "Negativa", "Entidad": "Project Success" },
+                { "Polaridad": "Positiva", "Entidad": "Misunderstandings" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Trust" }
+            ]
+        },
+        {
+            "Entidad": "Misunderstandings",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Feature Delivery" },
+                { "Polaridad": "Negativa", "Entidad": "Efficient Communication" },
+                { "Polaridad": "Negativa", "Entidad": "Stakeholder Trust" }
+            ]
+        },
+        {
+            "Entidad": "Revenue Growth",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Positiva", "Entidad": "Brand Reputation" }
+            ]
+        },
+        {
+            "Entidad": "Brand Reputation",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Trust" },
+                { "Polaridad": "Positiva", "Entidad": "Revenue Growth" },
+                { "Polaridad": "Positiva", "Entidad": "Customer Value" }
+            ]
+        },
+        {
+            "Entidad": "Stakeholder Trust",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Project Success" },
+                { "Polaridad": "Negativa", "Entidad": "Misaligned Goals" },
+                { "Polaridad": "Positiva", "Entidad": "Brand Reputation" }
+            ]
+        },
+        {
+            "Entidad": "Product Longevity",
+            "Influye": [
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Revenue Growth" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Trust" }
+            ]
+        },
+		{
+			"Entidad": "Firefighting",
+			"Influye": [
+				{ "Polaridad": "Positiva", "Entidad": "Short Term Productivity" },
+				{ "Polaridad": "Negativa", "Entidad": "Long Term Stability" },
+				{ "Polaridad": "Positiva", "Entidad": "Band-Aid Fixes" },
+				{ "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+				{ "Polaridad": "Negativa", "Entidad": "Potential Downtimes" },
+				{ "Polaridad": "Negativa", "Entidad": "Team Morale" },
+				{ "Polaridad": "Negativa", "Entidad": "Job Satisfaction" },
+				{ "Polaridad": "Negativa", "Entidad": "Errors" }
+			]
+		},
+		{
+			"Entidad": "I am my position",
+			"Influye": [
+				{ "Polaridad": "Negativa", "Entidad": "Team Collaboration" },
+				{ "Polaridad": "Negativa", "Entidad": "Cross-Functional Shadowing" },
+				{ "Polaridad": "Negativa", "Entidad": "Efficient Communication" },
+				{ "Polaridad": "Negativa", "Entidad": "Misunderstandings" },
+				{ "Polaridad": "Positiva", "Entidad": "Job Satisfaction" },
+				{ "Polaridad": "Positiva", "Entidad": "Ownership" },
+				{ "Polaridad": "Positiva", "Entidad": "Commitment" },
+				{ "Polaridad": "Negativa", "Entidad": "Organizational Culture" }
+			]
+		},
+		{
+            "Entidad": "Business Value",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Revenue Growth" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Trust" },
+                { "Polaridad": "Positiva", "Entidad": "Project Success" },
+                { "Polaridad": "Negativa", "Entidad": "Technical Debt Accumulation" },
+                { "Polaridad": "Positiva", "Entidad": "Brand Reputation" },
+                { "Polaridad": "Negativa", "Entidad": "Misaligned Goals" }
+            ]
+        },
+        {
+            "Entidad": "Customer Value",
+            "Influye": [
+                { "Polaridad": "Positiva", "Entidad": "Business Value" },
+                { "Polaridad": "Positiva", "Entidad": "Revenue Growth" },
+                { "Polaridad": "Positiva", "Entidad": "Feature Delivery" },
+                { "Polaridad": "Positiva", "Entidad": "Brand Reputation" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Satisfaction" },
+                { "Polaridad": "Negativa", "Entidad": "Product Longevity" },
+                { "Polaridad": "Positiva", "Entidad": "Stakeholder Trust" }
+            ]
+        }
+		
     ]
 };
 
